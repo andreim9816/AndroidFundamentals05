@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -21,6 +20,13 @@ import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.android.androidfundamentalsgroup1.activities.FormActivity;
+import com.android.androidfundamentalsgroup1.activities.SecondActivity;
+import com.android.androidfundamentalsgroup1.fragments.SumActivity;
+import com.android.androidfundamentalsgroup1.recycler_view.Email;
+import com.android.androidfundamentalsgroup1.recycler_view.EmailAdapter;
+import com.android.androidfundamentalsgroup1.styles.StyleSamplesActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -270,6 +276,21 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     public void buttonOpenFormActivityOnClick(View view) {
         Intent formActivity = new Intent(MainActivity.this, FormActivity.class);
+        startActivity(formActivity);
+    }
+
+    public void buttonOpenSumActivityOnClick(View view) {
+        Intent formActivity = new Intent(MainActivity.this, SumActivity.class);
+        startActivity(formActivity);
+    }
+
+    public void buttonOpenNavigationDrawerActivityOnClick(View view) {
+        Intent formActivity = new Intent(MainActivity.this, NavigationActivity.class);
+        startActivity(formActivity);
+    }
+
+    public void buttonOpenStyleActivityOnClick(View view) {
+        Intent formActivity = new Intent(MainActivity.this, StyleSamplesActivity.class);
         startActivity(formActivity);
     }
 }
